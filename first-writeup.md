@@ -147,3 +147,9 @@ What are the conservatives valuing? What about the Germans? What about a group o
 For the above algorithm to work (at least naively, without any other content curation techniques), every new user needs some Bitcoin ready to be sent in a zap. Otherwise, their feed remains empty.
 
 They could always operate in a sort of read-only mode, from the perspective of others. They could play around with other algorithms as described above. But to participate in the network dynamic, they'd need zaps.
+
+I think this is okay. I think a client focused on zap trails should require, as part of the onboarding, a lightning wallet set up and ready to zap. As described above, the first zap or two defines the user's starting network.
+
+When Xbox Live first came out, they made sure that every new customer had a mic; this move allowed game developers to rely comfortably on the assumption that all players could communicate quickly and easily. Similarly, a Nostr client that takes it for granted that all of its users are capable of zapping, can rely comfortably on the dynamics above.
+
+In theory this could be taken to the extreme position that accounts and content on Nostr that can't be zapped is not shown on this particular client.
