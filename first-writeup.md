@@ -87,7 +87,7 @@ Your two friends who've sent zaps to you see it. Or perhaps you reach out in ano
 
 Being relatively large zaps, they'll appear fairly high up in the nodes immediately upstream (those who have zapped your friends). They'll also appear higher upstream too right away, though with a diluted signal, and thus further down people's feeds.
 
-But a few people who see it zap it themselves. With each zap, your content jumps up to a higher place on the feeds of those upstream of the zaps. You could imagine that the zaps are opening channels for the content to follow.
+But a few people who see it zap it themselves. With each zap, your content jumps up to a higher place on the feeds of those upstream of the person who zapped it. The zaps effectively open channels for the content to follow outward into more of the network.
 
 People keep liking it. People keep zapping it. Why?
 
