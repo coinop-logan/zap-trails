@@ -167,3 +167,7 @@ Or we could even empower users to explore real-time, following sets of accounts 
 We could also question the assumption that the algorithm must start always from the user. You could choose to "put on the glasses" of any user in the network. What do they see? Try on different algorithms while you're at it. Where do they get their zaps from?
 
 What are the conservatives valuing? What about the Germans? What about a group of 3 people whose opinions you respect but which are generally quite different in how they call it?
+
+(testing)
+
+![image](imgs/c1a1.png)
