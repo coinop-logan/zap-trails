@@ -44,9 +44,9 @@ Actually, we can now reframe that initial step of "endorsing" AlexJones with ask
 
 Let's start talking in terms of zap *networks*. These are directed graphs, and you could imagine them fruitfully as a set of neurons (accounts) and synapses firing (zaps - pun appreciated!).
 
-Even before introducing pruning tools, spam will have a hard time getting onto a feed built solely from zap networks. If I have only zapped friends and talented artists, and they have only zapped content they in turn value, and so on, we can safely assume it will be several iterations into the above zap trail algorithm before spam shows up.
+Even before introducing pruning tools, spam will have a hard time getting onto a feed built solely from zap networks. If I have only zapped friends and talented artists, and they have only zapped content they in turn value, and so on, we can probably follow zap trails out for quite some time before seeing any spam.
 
-This is related to the fact there is no objective feed to hijack or buy your way into. The algorithm never looks at any central, global list of zaps (or upvotes, or follows) to find globally popular content. Instead the algorithm crawls through the network, using the user's zaps as a starting point in an organically built web of trust (or value).
+This is related to the fact there is no objective feed to hijack or buy your way into. The algorithm never looks at any central, global list of zaps (or upvotes, or follows) to find globally popular content. Instead the algorithm crawls through the network, using the user's zaps as a starting point in an organically built "web of value".
 
 To get you to see spam, a spammer would have to find an account downstream of your zaps, and somehow get that account to zap their content. The further downstream they aim, the more likely we might imagine their chance of success, but also the further down your feed the spam would appear.
 
@@ -64,37 +64,23 @@ A whole tree of spam, just gone, banished forever, unless AlexJones can get some
 
 Further, these prune actions could be published and respected by zap trail algorithms (Do I smell a NIP?). Then when you remove AlexJones, you're not just doing it for yourself - you're doing it knowing that this will clean up every feed *upstream* of your own - any feed whose user has zapped *you*.
 
-And as a consequence, AlexJones didn't just lose your attention. He lost the attention of everyone who trusts you (or at least, the part of the attention that you were responsible for propagating upstream).
-
-Now things start to look even more interesting: the zap network as a whole begins to exhibit some higher-level behavior...
+And as a consequence, AlexJones didn't just lose your attention. He lost the attention of everyone who trusted you (or at least, the part of the attention that you were responsible for propagating upstream).
 
 ## Zap Network Cultivation and Evolution
 
-Let's imagine the behavior of a Nostr community that only discovers content via the above zap trail algorithm as described, including pruning. For simplicity let's assume no other mechanisms are used (follows, likes, reposts, etc).
+What would it look like if a community relied only on this technique? For simplicity let's assume no other mechanisms are used (follows, likes, reposts, etc).
 
-Any given user will be aware, intuitively, of their position as a node in this zap network, this directed graph, this neural net of sorts. Their zaps, sent outward, essentially pull content back to them through these pathways from downstream - and the content doesn't stop there, but travels further upstream, to anyone who has zapped the user. The user knows that they are not just modifying, and cultivating, their own feed, but that of the network, their audience.
+Any given user will be aware, intuitively, of their position as a node in this zap network, this directed graph, this neural net of sorts. Their zaps, sent outward, essentially pull content back to them through these pathways from downstream - and the content doesn't stop there, but travels further upstream, to anyone who has zapped the user. Similarly, pruning prevents this propogation. The user has the experience of cultivating not just their own feed, but the network around them as well.
 
-Think of how this changes what it means to zap. It's no longer only a thank you and a financial reward; it's now a direct boost to the content's virality, propagating it further. A zap in this dynamic would be saying: "this content is good, I want you to have this money, and *people who value me will now see it*". And the impact is proportional to the amount: a large zap would make the creator's reach spread further, because it would carry more "weight" upstream, thus appearing higher in feeds.
-
-The same applies to pruning actions. Pruning is an intriguing third option aside from top-level censorship in a given topic or community, and free-for-all message boards where anyone can smear their shit up for anyone to see. The user is empowered to clean up *their* feed, *their* bit of the network - without imposing this subjective opinion on any part of the network that didn't already buy into the user's discernment.
+Think of how this changes what it means to zap. It's no longer only a thank you and a financial reward; it's now a direct boost to the content's virality, propagating it further. A zap in this dynamic would be saying: "this content is good, I want you to have this money, and *people who value me will now see it*".
 
 ## The Effect on Content
 
 You sit down and spend a day creating a piece of art. Let's assume it's good. In fact let's assume it's *really good*.
 
-You post it, and zap it to get it on the zap network.
+You post it, and it gets one or two initial zaps, perhaps from you or some friends. This gets it some initial visibility on the zap network.
 
-Your two friends who've sent zaps to you see it. Or perhaps you reach out in another channel, if you're really starting from zero trust, and ask for modest zaps. And because it's *really good*, the zaps will be large, relative to these friends' typical zaps.
-
-Being relatively large zaps, they'll appear fairly high up in the nodes immediately upstream (those who have zapped your friends). The content will also immediately appear further upstream, for anyone scrolling far enough down their feed and close enough upstream to your friends.
-
-A few more people see it and zap it. With each zap, your content jumps up to a higher place on the feeds of those upstream of zappers. The zaps effectively open channels for the content to follow outward into more of the network.
-
-The zaps continue to roll in - sucking your content through the network, pushing sats to your account. Why?
-
-* They want you to have the money.
-* They want you to know they liked it.
-* They want other people to see it.
+Because it's really good, it starts to get more zaps, and some of them are pretty large. With each zap, your content gains signal upstream. Larger zaps mean stronger signal.
 
 Within this framework, content that spreads == content that people value == content that brings in revenue to its author. Content that travels far brings in a lot of money.
 
@@ -106,14 +92,14 @@ A well-written concise paragraph on a novel thought. A funny joke, a meme. A coo
 
 Or imagine a long-form format. What could you compose and see the income slowly ramp up for, over days and weeks?
 
-A nuanced view on an over-politicized topic, spreading through people who are equally tired of the tribal shit. A blueprint for a 3d printed widget among 3d printer enthusiasts. A piece of software. A song. A mashup. A series.
+A nuanced view on an over-politicized topic, spreading through people who are equally tired of the tribal shit. A blueprint for a 3d printed widget among 3d printer enthusiasts. A piece of software. A song. A mashup. A series. A scoop.
 
-All, of course, completely outside of the game of copyrights and DRM.
+Content is monetized, without legacy methods such as ads, copyright, DRM, etc.
 
 ## What Now?
 
-I believe the above is a cornucopia that
-* Simplifies and empowers content curation in an elegant way that aligns with the principles of decentalized social networks
+I believe the above is a cornucopia that, if adopted by a subset of the Nostr community,
+* Supercharges content curation and discovery, in a way that aligns with Nostr's values
 * Neuters spam
 * Puts zaps center-stage, encouraging a massive uptake in zapping as a regular use of content consumption
 * Allows content creators to make money with mindblowing effectiveness and rapidity
@@ -122,10 +108,10 @@ So what's next?
 
 Firstly, feedback. If I seem to be missing something, I'd like to know! This idea has been bouncing around my head for years. Maybe it's crazy! I don't know!
 
-If the feedback is promising, I will approach OpenSats for research funding. If I can get this (or other) support, I'd first prove the concept quickly, perhaps with a minimalist POC, or by modifying some other client, or simply by manually performing the algorithm with well-known accounts and publishing the results.
+If the feedback is promising, I intend to approach OpenSats for research funding. If I can get this (or other) support, I'd first prove the concept quickly, perhaps with a minimalist POC, or by modifying some other client, or simply by manually performing the algorithm with well-known accounts and publishing the results.
 
 With the core concept proven - specifically, that by following zaps through the network we get very good content curation and avoid spam - the next step would be to design or modify a client such that it:
-* relies primarily or solely on the above algorithm for feed construction
+* relies primarily or solely on the zap trail algorithms for feed construction
 * requires the user set up zapping during onboarding
 * puts zapping at center-stage in the UX as the sole or primary action for supporting and "upvoting" content
 * supports pruning (likely implemented as an NIP)
@@ -142,11 +128,13 @@ Thank you for coming to my Ted Talk. Here are some other notes and ideas I'm hap
 
 For the above algorithm to work (at least without any other content curation mechanisms), every new user needs to be able to zap. Otherwise, their feed remains empty.
 
-If they can't zap, they could still operate in a sort of read-only mode, looking at the network from the perspective of other accounts. But to participate in the network dynamic, they'd need zaps. Similarly, they could post, but without at least a self-zap (see next section) it wouldn't enter the zap network, and thus would not be seen in anyone's feeds.
+If they can't zap, they could still operate in a sort of read-only mode, looking at the network from the perspective of other accounts (See "What does Alex Jones see?" below). But to participate in the network dynamic, they'd need zaps. Similarly, they could post, but without at least a self-zap (see next section) it wouldn't enter the zap network, and thus would not be seen in anyone's feeds.
 
 We could think of some ways around this, but there's an argument to be made that this is actually a good thing, that we *want* a user to have to set up a lightning wallet and send a first zap.
 
 When Xbox Live first came out, the only way to get on the network was to buy a starter pack which included a mic. This allowed game developers to rely comfortably on the assumption that all Xbox Live players could communicate with voice. Similarly, a Nostr client that takes it for granted that all of its users are capable of zapping can rely comfortably on the dynamics above.
+
+My hunch is that this would be worth the cost of a higher barrier of entry to users.
 
 #### Self-Zaps
 
@@ -154,7 +142,7 @@ With this algorithm strictly imposed, and no other curation algorithm present, p
 
 This could be addressed with a self-zap, where the amount zapped indicates the author's confidence in the post (relative to their other zaps). Remember that an author can't take up more space/weight in upstream feeds than they've earned through zaps anyway, so there's no reason to disallow self-zaps.
 
-And if we look at it from first principles, is it really so awkward to decouple the act of posting/uploading the content, from the act of promoting/broadcasting? The former is about data upload and likely some amount of composition in the client interface, and typically involves a single creator. The latter is about social influence, and could include a concerted effort from a whole group.
+And if we look at it from first principles, is it really so awkward to decouple the act of posting/uploading the content, from the act of promoting/broadcasting? The former is about data upload and would involve some amount of composition in the client interface, and typically involves a single creator. The latter is about social influence, and could include a concerted effort from a whole group.
 
 Of course, an interface could always choose to bundle these in the UX, so that at the step of submitting content the user can zap it at the same step.
 
@@ -170,18 +158,18 @@ It would makes sense to visually separate these sections, and while we're at it,
 
 #### Other Algorithms
 
-The algorithm mentioned above should really be thought of as a single instance of a family of algorithms, which specifically asks: "where does my money go, and through what content?"
+The algorithm described above asks "where does my money go, and through what content?". But it's really just one instance of a family of algorithms; there are some other interesting ways to query the zap network.
 
-We could reverse the traversal direction, and instead follow zaps from recipient back to sender. Build a list of accounts who have zapped you, then find out who zapped them, and so on. Then you are asking "where does my money come from?" This is something like a shift from a focus on who your content creators are to who your *audience* is.
+To start with, we could reverse the traversal direction, and instead follow zaps "backward", from recipient to sender. Build a list of accounts who have zapped you (C1 would in this case show you what your most popular content is), then find out who zapped them, and so on. Then you are asking "where does my money come from?" This is something like a shift from a focus on where your consumed content comes from, to where your produced content goes - in other words, your *audience*.
 
 Or you could alternate between going forward and backward: who have you zapped? Call it A1. Who *else* has zapped A1? Call it A0 - these are "people who like what you liked". Now where do zaps from A0 go? You start to ask the question "What do people like me value?" Further iteration would broaden the definition of "people like me".
 
 Users could choose from a drop-down menu of such algorithms. Perhaps they could even modify or create their own.
 
-Or we could even empower users to explore real-time, following sets of accounts around, so that we no longer talk of "iterating" over a fixed algorithm, but rather moves we can perform to move from one set of users/content to another.
+Or we could even empower users to explore real-time, following sets of accounts around, so that we no longer talk of "iterating" over a fixed algorithm, but rather moves we can perform to move from one set of users/content to another. Paired with a search string, this could be an extremely powerful research tool.
 
 #### What does Alex Jones see?
 
-We could also question the assumption that the algorithm must start always from the user. You could choose to "put on the glasses" of any user in the network. What do they see? Try on different algorithms while you're at it. Where do they get their zaps from?
+We could also look at the network from a starting node other than the user. Doing this would be like "putting on the glasses" of the target user. What do they see? Try on different algorithms while you're at it. Where do they get their zaps from?
 
 What are the conservatives valuing? What about the Germans? What about a group of 3 people whose opinions you respect but are quite divergent?
