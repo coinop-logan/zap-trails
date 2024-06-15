@@ -18,7 +18,7 @@ Choose a time window we want to focus on. Let's say a week.
 
 Look at all the zaps sent by AlexJones that reference content in the last week. From this build:
 * C1: a list of all the pieces of content referenced by the zaps, weighted by zap size
-* A1: a list of the authors of this content, weighted by total amount zapped for this content
+* A1: a list of the authors of this content, weighted by total amount zapped for their content
 
 The result might look something like this:
 
@@ -58,7 +58,7 @@ Say you see something on your feed about selling some supplements. Ah! Spam! Clu
 
 So you just blacklist AlexJones, pruning him from your zap network. By now you've built up a much more diverse and organic zap network anyway.
 
-A whole tree of spam, just gone, banished forever, unless AlexJones can get someone else downstream your zap network to zap him. And if that happens, you can just judiciously prune whatever node node in the tree you deem beyond redemption.
+A whole tree of spam, just gone, banished forever, unless AlexJones can get someone else downstream your zap network to zap him. And if that happens, you can just judiciously prune whatever node in the tree you deem beyond redemption.
 
 Further, these prune actions could be published and respected by zap trail algorithms (Do I smell a NIP?). Then when you remove AlexJones, you're not just doing it for yourself - you're doing it knowing that this will clean up every feed *upstream* of your own - any feed whose user has zapped *you*.
 
@@ -126,16 +126,19 @@ If the feedback is promising, I will approach OpenSats for research funding. If 
 
 With the core concept proven - specifically, that by following zaps through the network we get very good content curation and avoid spam - the next step would be to design or modify a client such that it:
 * relies primarily or solely on the above algorithm for feed construction
-* puts zapping at center-stage in the UX as a primary action for supporting and "upvoting" content
+* requires the user set up zapping during onboarding
+* puts zapping at center-stage in the UX as the sole or primary action for supporting and "upvoting" content
 * supports pruning (likely implemented as an NIP)
 
 With such a client, we'd prime the pump for those exciting second-order dynamics described in the last two sections, of a self-cultivating neural net of content, where content creators could make serious money overnight.
 
-## Other Notes
+---
+
+### Other Notes
 
 Thank you for coming to my Ted Talk. Here are some other notes and ideas I'm happy to discuss further.
 
-### Users Must be Zap-Capable
+#### Users Must be Zap-Capable
 
 For the above algorithm to work (at least without any other content curation mechanisms), every new user needs to be able to zap. Otherwise, their feed remains empty.
 
@@ -145,7 +148,7 @@ We could think of some ways around this, but there's an argument to be made that
 
 When Xbox Live first came out, the only way to get on the network was to buy a starter pack which included a mic. This allowed game developers to rely comfortably on the assumption that all Xbox Live players could communicate with voice. Similarly, a Nostr client that takes it for granted that all of its users are capable of zapping can rely comfortably on the dynamics above.
 
-### Self-Zaps
+#### Self-Zaps
 
 With this algorithm strictly imposed, and no other curation algorithm present, posting alone does not actually make content visible. It must also receive a zap - otherwise it doesn't enter the zap network, and thus does not appear on anyone's feed.
 
@@ -155,7 +158,7 @@ And if we look at it from first principles, is it really so awkward to decouple 
 
 Of course, an interface could always choose to bundle these in the UX, so that at the step of submitting content the user can zap it at the same step.
 
-### C1/C2/C3... As Sections
+#### C1/C2/C3... As Sections
 
 When a user zaps content, it has the effect of essentially pinning it to their feed, because it comes to be in C1. Thus C1 would contain all the content the user has directly liked (within the time window we're working with).
 
@@ -165,7 +168,7 @@ C2 would contain all the content that came from "the next ring out", the content
 
 It would makes sense to visually separate these sections, and while we're at it, put the user in charge of requesting the next iteration with a "load more"-like button that actually triggers the next iteration.
 
-### Other Algorithms
+#### Other Algorithms
 
 The algorithm mentioned above should really be thought of as a single instance of a family of algorithms. That algorithm basically asks: "where does my money go, and through what content?"
 
@@ -177,7 +180,7 @@ Users could choose from a drop-down menu of such algorithms. Perhaps they could 
 
 Or we could even empower users to explore real-time, following sets of accounts around, so that we no longer talk of "iterating" over a fixed algorithm, but rather moves we can perform to move from one set of users/content to another.
 
-### What does Alex Jones see?
+#### What does Alex Jones see?
 
 We could also question the assumption that the algorithm must start always from the user. You could choose to "put on the glasses" of any user in the network. What do they see? Try on different algorithms while you're at it. Where do they get their zaps from?
 
