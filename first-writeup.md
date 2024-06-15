@@ -1,8 +1,16 @@
-# Zap Trails: A Silver Bullet to Content Curation and Neutering Spam
+# Zap Trails: A Silver Bullet for Content Curation on Nostr
+
+### In Short:
+
+* Nostr is sitting on a gold mine in the form of zap data - a latent web of trust (or web of value). Using simple algorithms, we can crawl this *zap network* to discover/curate fresh, valuable content and route around spam.
+* A client built around this concept would allow content creators to make significant money by providing valuable content, because viral content by definition receives a large volume of zaps.
+* A community using such a client would bootstrap an adaptive, self-pruning network that resembles a neural net, where accounts act as neurons and zaps as synapses firing.
+
+(An updated version of writeup is maintained [here](https://github.com/coinop-logan/zap-trails/blob/master/first-writeup.md).)
+
+We'll start with the algorithm.
 
 ## A Basic Zap Trail Algorithm
-
-How do we show a new user content that is not only good and not spam, but relevant and fresh?
 
 Start with a social media platform with things like notes and zaps, where:
 * zaps are cheap/free to execute
